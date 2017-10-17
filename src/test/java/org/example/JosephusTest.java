@@ -32,14 +32,19 @@ public class JosephusTest {
         josephus(2,3);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void testKEqualN() throws Exception {
-        int result = josephus(4,4);
+       assertEquals(josephus(4,4), 1);
     }
 
     @Test
     public void testN3K2() throws Exception {
-        int result = josephus(3,2);
+        assertEquals(josephus(3,2),2);
+    }
+
+    @Test(expected = StackOverflowError.class)
+    public void testLargeN() throws Exception {
+        int result = josephus( 1000000,2);
         System.out.println(result);
     }
 

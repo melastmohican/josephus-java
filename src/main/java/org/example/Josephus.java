@@ -6,10 +6,16 @@ package org.example;
  */
 public class Josephus {
     public static int josephus(int n, int k) {
-        //if (n < 1) throw new IllegalArgumentException("n is out of range!");
-        //if (k < 1 || k >= n) throw new IllegalArgumentException("k is out of range!");
+        if (n < 1) throw new IllegalArgumentException("n is out of range!");
+        if (k < 1 || k > n) throw new IllegalArgumentException("k is out of range!");
         if (n == 1) return 0;
 
-        return (josephus(n-1, k) + k) % n;
+        return josephusRecursive(n, k);
+    }
+
+    private static int josephusRecursive(int n, int k) {
+        if (n == 1) return 0;
+
+        return (josephusRecursive(n - 1, k) + k) % n;
     }
 }
