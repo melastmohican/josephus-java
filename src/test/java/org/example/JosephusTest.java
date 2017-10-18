@@ -1,9 +1,9 @@
 package org.example;
 
 import org.junit.Test;
-import static org.example.Josephus.josephus;
 
-import static org.junit.Assert.*;
+import static org.example.Josephus.josephus;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Make sure your tests cover the following scenarios
@@ -11,7 +11,6 @@ import static org.junit.Assert.*;
  * What happens if n = k?
  * What happens if n = 3 and k = 2?
  * What happens if n is very large, but k =2?
- * Choose a couple of other cases to test
 
  * Created by mordor on 10/15/17.
  */
