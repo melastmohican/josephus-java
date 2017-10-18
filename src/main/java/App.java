@@ -5,7 +5,7 @@ import org.example.JosephusProblem;
  * For example, if k is the step rate, then you skip k-1 people and eliminate the kth person.
  * The output of the program should be the place you need to stand in the circle to be the last person left.
  */
-public class App {
+class App {
     public static void main(String[] args) {
         int n;
         int k;

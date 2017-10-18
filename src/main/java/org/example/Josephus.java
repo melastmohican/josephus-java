@@ -9,12 +9,12 @@ package org.example;
  * g(n,k)=(g(n-1,k)+k){\bmod  n},{\text{ with }}g(1,k)=0
  * Created by mordor on 10/15/17.
  */
-public class Josephus {
+class Josephus {
     /**
      * Josephus problem - recursive solution
-     * @param n
-     * @param k
-     * @return
+     * @param n people in the circle
+     * @param k step rate
+     * @return last person left
      */
     public static int josephus(int n, int k) {
         if (n < 1) throw new IllegalArgumentException("n is out of range!");

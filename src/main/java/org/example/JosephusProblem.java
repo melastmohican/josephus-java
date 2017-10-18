@@ -14,9 +14,9 @@ import java.util.Queue;
 public class JosephusProblem {
     /**
      * Josephus problem solution using a queue
-     * @param n
-     * @param k
-     * @return
+     * @param n people in the circle
+     * @param k step rate
+     * @return last person left
      */
     public static int josephus(int n, int k) {
         if (n < 1) throw new IllegalArgumentException("n is out of range!");
