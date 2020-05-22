@@ -6,7 +6,8 @@ package org.example;
  * After a specified number of people are skipped, the next person is executed. The procedure is repeated with the remaining people, starting with the next person,
  * going in the same direction and skipping the same number of people, until only one person remains, and is freed.
  * <p>
- * g(n,k)=(g(n-1,k)+k){\bmod  n},{\text{ with }}g(1,k)=0
+ * g(n,k)=(g(n-1,k)+k) mod n
+ * g(1,k)=0
  * Created by mordor on 10/15/17.
  */
 class Josephus {
